@@ -9,7 +9,7 @@ public class jdbc {
 		Class.forName("com.mysql.jdbc.Driver");  
 		Connection con=DriverManager.getConnection(  
 		"jdbc:mysql://localhost:3306/dilip","root","");  
-		//here sonoo is database name, root is username and password  
+		//here dilip is database name, root is username and password  
 		Statement stmt=con.createStatement();  
 		ResultSet rs=stmt.executeQuery("select * from kumar");  
 		while(rs.next())  
